@@ -1,15 +1,26 @@
 <template>
   <div class="min-h-screen bg-hn-bg">
     <Header />
-    <main class="container mx-auto px-4 py-8 max-w-5xl">
-      <h1 class="text-2xl font-bold mb-6">Top Stories</h1>
-      <StoryList 
-        :stories="stories"
-        :loading="loading"
-        :error="error"
-        @retry="fetchStories"
-      />
+    <main class="container mx-auto px-[70px] py-12">
+      <div class="grid grid-cols-12 gap-12">
+        <!-- Main Content -->
+        <div class="col-span-8">
+          <h1 class="text-4xl font-medium text-hn-text mb-8">Top Stories</h1>
+          <StoryList 
+            :stories="stories"
+            :loading="loading"
+            :error="error"
+            @retry="fetchStories"
+          />
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="col-span-4">
+          <ReadingList />
+        </div>
+      </div>
     </main>
+    <Footer />
   </div>
 </template>
 
@@ -17,6 +28,8 @@
 import { ref, onMounted } from 'vue'
 import Header from '../components/Header.vue'
 import StoryList from '../components/StoryList.vue'
+import ReadingList from '../components/ReadingList.vue'
+import Footer from '../components/Footer.vue'
 import { getTopStories, getItems } from '../services/hackernews'
 
 /**

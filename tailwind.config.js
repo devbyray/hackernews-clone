@@ -9,7 +9,12 @@ export default {
     extend: {
       colors: {
         'hn-orange': '#ff6600',
-        'hn-bg': '#f6f6ef',
+        'hn-bg': '#fafcff',
+        'hn-text': '#54575a',
+        'hn-dark': '#3f220f',
+      },
+      fontFamily: {
+        'larsseit': ['Larsseit', 'system-ui', 'sans-serif'],
       },
     },
   },

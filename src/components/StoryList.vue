@@ -11,12 +11,13 @@
     <div v-else-if="stories.length === 0" class="text-center py-12 text-gray-500">
       No stories found
     </div>
-    <div v-else class="space-y-3">
+    <div v-else class="space-y-6">
       <StoryItem 
         v-for="(story, index) in stories"
         :key="story.id"
         :story="story"
         :index="startIndex + index"
+        :class="{ 'border-b border-gray-200 pb-6': index < stories.length - 1 }"
       />
     </div>
   </div>

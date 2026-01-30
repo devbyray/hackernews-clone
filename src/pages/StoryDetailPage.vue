@@ -61,10 +61,10 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
-import Header from '../components/Header.vue'
-import LoadingSpinner from '../components/LoadingSpinner.vue'
-import ErrorMessage from '../components/ErrorMessage.vue'
-import CommentList from '../components/CommentList.vue'
+import Header from '../components/Header/Header.vue'
+import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner.vue'
+import ErrorMessage from '../components/ErrorMessage/ErrorMessage.vue'
+import CommentList from '../components/CommentList/CommentList.vue'
 import { getItem, getCommentWithReplies } from '../services/hackernews'
 
 /**

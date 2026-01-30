@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import StoryList from './StoryList.vue'
-import LoadingSpinner from './LoadingSpinner.vue'
-import ErrorMessage from './ErrorMessage.vue'
-import StoryItem from './StoryItem.vue'
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner.vue'
+import ErrorMessage from '../ErrorMessage/ErrorMessage.vue'
+import StoryItem from '../StoryItem/StoryItem.vue'
 
 describe('StoryList', () => {
   const router = createRouter({

@@ -30,9 +30,9 @@
 </template>
 
 <script setup>
-import LoadingSpinner from './LoadingSpinner.vue'
-import ErrorMessage from './ErrorMessage.vue'
-import CommentItem from './CommentItem.vue'
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner.vue'
+import ErrorMessage from '../ErrorMessage/ErrorMessage.vue'
+import CommentItem from '../CommentItem/CommentItem.vue'
 
 /**
  * CommentList Component

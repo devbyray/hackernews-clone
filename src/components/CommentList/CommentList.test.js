@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import CommentList from './CommentList.vue'
-import LoadingSpinner from './LoadingSpinner.vue'
-import ErrorMessage from './ErrorMessage.vue'
-import CommentItem from './CommentItem.vue'
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner.vue'
+import ErrorMessage from '../ErrorMessage/ErrorMessage.vue'
+import CommentItem from '../CommentItem/CommentItem.vue'
 
 describe('CommentList', () => {
   const mockComments = [

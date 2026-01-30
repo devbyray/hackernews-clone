@@ -24,9 +24,9 @@
 </template>
 
 <script setup>
-import LoadingSpinner from './LoadingSpinner.vue'
-import ErrorMessage from './ErrorMessage.vue'
-import StoryItem from './StoryItem.vue'
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner.vue'
+import ErrorMessage from '../ErrorMessage/ErrorMessage.vue'
+import StoryItem from '../StoryItem/StoryItem.vue'
 
 /**
  * StoryList Component

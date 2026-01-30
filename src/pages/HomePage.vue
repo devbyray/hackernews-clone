@@ -26,10 +26,10 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import Header from '../components/Header.vue'
-import StoryList from '../components/StoryList.vue'
-import ReadingList from '../components/ReadingList.vue'
-import Footer from '../components/Footer.vue'
+import Header from '../components/Header/Header.vue'
+import StoryList from '../components/StoryList/StoryList.vue'
+import ReadingList from '../components/ReadingList/ReadingList.vue'
+import Footer from '../components/Footer/Footer.vue'
 import { getTopStories, getItems } from '../services/hackernews'
 
 /**

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-hn-bg text-gray-900;
+  }
+}
+
+@layer components {
+  .hn-link {
+    @apply text-gray-700 hover:underline cursor-pointer;
+  }
+  
+  .hn-button {
+    @apply px-4 py-2 bg-hn-orange text-white rounded hover:bg-orange-600 transition-colors;
+  }
+}

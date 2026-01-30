@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
 	--color-hn-orange: #ff6600;
 	--color-hn-bg: #fafcff;
 	--color-hn-text: #54575a;
 	--color-hn-dark: #3f220f;
-	
+
 	--font-family-larsseit: Larsseit, system-ui, sans-serif;
 }
 

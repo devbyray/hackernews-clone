@@ -19,27 +19,30 @@ A fully functional, read-only HackerNews clone built from scratch with Vue 3, fe
 ## 🎯 Live Demo
 
 Run locally in 2 minutes:
+
 ```bash
 npm install
 npm run dev
 ```
+
 Visit: http://localhost:5173
 
 ## 🏗️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **Vue 3** | UI Framework (Composition API) |
-| **Vue Router** | Client-side routing |
-| **Tailwind CSS** | Utility-first styling |
-| **Vitest** | Unit testing framework |
-| **Storybook** | Component documentation |
-| **Vite** | Build tool & dev server |
-| **HackerNews API** | Real data integration |
+| Technology         | Purpose                        |
+| ------------------ | ------------------------------ |
+| **Vue 3**          | UI Framework (Composition API) |
+| **Vue Router**     | Client-side routing            |
+| **Tailwind CSS**   | Utility-first styling          |
+| **Vitest**         | Unit testing framework         |
+| **Storybook**      | Component documentation        |
+| **Vite**           | Build tool & dev server        |
+| **HackerNews API** | Real data integration          |
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+ and npm
 
 ### Installation
@@ -97,15 +100,15 @@ src/
 
 All 7 components are fully tested and documented:
 
-| Component | Purpose | Tests | Stories |
-|-----------|---------|-------|---------|
-| **Header** | Navigation header | 3 | 1 |
-| **LoadingSpinner** | Loading indicator | 6 | 5 |
-| **ErrorMessage** | Error display | 8 | 5 |
-| **StoryItem** | Individual story card | 7 | 5 |
-| **StoryList** | List of stories | 6 | 5 |
-| **CommentItem** | Recursive comment | 8 | 5 |
-| **CommentList** | Comment container | 8 | 5 |
+| Component          | Purpose               | Tests | Stories |
+| ------------------ | --------------------- | ----- | ------- |
+| **Header**         | Navigation header     | 3     | 1       |
+| **LoadingSpinner** | Loading indicator     | 6     | 5       |
+| **ErrorMessage**   | Error display         | 8     | 5       |
+| **StoryItem**      | Individual story card | 7     | 5       |
+| **StoryList**      | List of stories       | 6     | 5       |
+| **CommentItem**    | Recursive comment     | 8     | 5       |
+| **CommentList**    | Comment container     | 8     | 5       |
 
 **Total: 46 tests, 21 Storybook stories**
 
@@ -120,6 +123,7 @@ npm test -- --run
 ```
 
 **Results:**
+
 - ✅ 7 test files
 - ✅ 46 tests passing
 - ✅ 100% component coverage
@@ -127,7 +131,7 @@ npm test -- --run
 ## 📚 Documentation
 
 - **[QUICKSTART.md](./QUICKSTART.md)** - Get started in 2 minutes
-- **[COMPONENTS.md](./COMPONENTS.md)** - Detailed component documentation  
+- **[COMPONENTS.md](./COMPONENTS.md)** - Detailed component documentation
 - **[PROJECT-SUMMARY.md](./PROJECT-SUMMARY.md)** - Complete project overview
 - **Storybook** - Interactive component examples (run `npm run storybook`)
 
@@ -144,6 +148,7 @@ Uses the official [HackerNews Firebase API](https://github.com/HackerNews/API):
 ### Change Theme Colors
 
 Edit `tailwind.config.js`:
+
 ```javascript
 colors: {
   'hn-orange': '#ff6600',  // HackerNews orange
@@ -154,21 +159,25 @@ colors: {
 ### Adjust Story Count
 
 Edit `src/pages/HomePage.vue`:
+
 ```javascript
-const storyIds = await getTopStories(30)  // Change to any number
+const storyIds = await getTopStories(30) // Change to any number
 ```
 
 ## 📸 Screenshots
 
 ### Home Page - Top Stories
+
 Browse the latest HackerNews stories with scores, authors, and comment counts.
 
 ### Story Detail Page
+
 View full story details with nested, collapsible comment threads.
 
 ## 🤝 Contributing
 
 This is a learning project showcasing:
+
 - Vue 3 Composition API
 - Component-driven development
 - Test-driven development

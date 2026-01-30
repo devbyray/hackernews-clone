@@ -24,6 +24,7 @@ npm run dev
 Open your browser to: **http://localhost:5173**
 
 You'll see:
+
 - Top 30 HackerNews stories
 - Click any story to view details and comments
 - Responsive design that works on all devices
@@ -47,20 +48,24 @@ Browse 21 interactive component examples with documentation!
 ## 🎯 What to Try
 
 ### Browse Stories
+
 1. Visit http://localhost:5173
 2. See top 30 stories from HackerNews
 3. Stories show: title, score, author, time, comment count
 
 ### View Story Details
+
 1. Click any story title (with a link icon)
 2. Opens external article in new tab
 
 ### Read Comments
+
 1. Click the comment count on any story
 2. See nested comment threads
 3. Click `[+]` to collapse, `[-]` to expand threads
 
 ### Test Responsiveness
+
 1. Resize your browser window
 2. Try mobile, tablet, and desktop sizes
 3. Everything adapts smoothly!
@@ -70,6 +75,7 @@ Browse 21 interactive component examples with documentation!
 ## 📖 Explore the Code
 
 ### Components (`src/components/`)
+
 - **Header.vue** - Navigation header
 - **LoadingSpinner.vue** - Loading indicator
 - **ErrorMessage.vue** - Error display
@@ -79,15 +85,18 @@ Browse 21 interactive component examples with documentation!
 - **CommentList.vue** - List of comments
 
 Each component has:
+
 - `.vue` file - Component implementation
 - `.test.js` file - Unit tests
 - `.stories.js` file - Storybook stories
 
 ### Pages (`src/pages/`)
+
 - **HomePage.vue** - Top stories list
 - **StoryDetailPage.vue** - Story with comments
 
 ### Services (`src/services/`)
+
 - **hackernews.js** - API integration
 
 ---
@@ -124,7 +133,9 @@ npm run preview
 ## 🎨 Customize
 
 ### Change Colors
+
 Edit `tailwind.config.js`:
+
 ```javascript
 colors: {
   'hn-orange': '#ff6600',  // Change this!
@@ -133,9 +144,11 @@ colors: {
 ```
 
 ### Modify Story Count
+
 Edit `src/pages/HomePage.vue`:
+
 ```javascript
-const storyIds = await getTopStories(30)  // Change 30 to any number
+const storyIds = await getTopStories(30) // Change 30 to any number
 ```
 
 ---
@@ -166,12 +179,14 @@ const storyIds = await getTopStories(30)  // Change 30 to any number
 ## 🆘 Troubleshooting
 
 **Tests failing?**
+
 ```bash
 npm install
 npm test -- --run
 ```
 
 **Dev server not starting?**
+
 ```bash
 # Check if port 5173 is in use
 lsof -i :5173
@@ -180,6 +195,7 @@ npm run dev
 ```
 
 **Storybook not working?**
+
 ```bash
 npm run storybook
 # Visit http://localhost:6006
@@ -190,6 +206,7 @@ npm run storybook
 ## 🎉 You're Ready!
 
 Your HackerNews Clone is fully functional with:
+
 - ✅ 7 well-documented components
 - ✅ 46 passing unit tests
 - ✅ 21 Storybook stories

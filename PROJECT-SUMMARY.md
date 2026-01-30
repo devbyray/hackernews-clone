@@ -19,6 +19,7 @@ A fully functional, read-only HackerNews clone built from scratch with comprehen
 ## 🎯 Features Implemented
 
 ### ✅ Core Functionality
+
 - [x] Browse top 30 stories from HackerNews
 - [x] View story details with nested comments
 - [x] Real HackerNews API integration
@@ -27,6 +28,7 @@ A fully functional, read-only HackerNews clone built from scratch with comprehen
 - [x] Error handling with retry functionality
 
 ### ✅ Components (All with Tests & Stories)
+
 1. **Header** - Navigation header with sticky positioning
 2. **LoadingSpinner** - Configurable loading indicator
 3. **ErrorMessage** - Error display with retry/dismiss actions
@@ -36,6 +38,7 @@ A fully functional, read-only HackerNews clone built from scratch with comprehen
 7. **CommentList** - List of comments with count display
 
 ### ✅ Testing & Documentation
+
 - [x] Vitest unit tests for all components
 - [x] Storybook stories for all components
 - [x] Comprehensive component documentation
@@ -99,28 +102,35 @@ hackernews-clone/
 ## 🚀 Quick Start
 
 ### Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### Development Server
+
 ```bash
 npm run dev
 ```
+
 Visit: http://localhost:5173
 
 ### Run Tests
+
 ```bash
 npm test
 ```
 
 ### Storybook
+
 ```bash
 npm run storybook
 ```
+
 Visit: http://localhost:6006
 
 ### Build for Production
+
 ```bash
 npm run build
 ```
@@ -130,6 +140,7 @@ npm run build
 ## 🧪 Testing
 
 All 46 tests passing:
+
 - ✅ Header: 3 tests
 - ✅ LoadingSpinner: 6 tests
 - ✅ ErrorMessage: 8 tests
@@ -142,16 +153,16 @@ All 46 tests passing:
 
 ## 📚 Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| Vue 3 | UI framework (Composition API) |
-| Vue Router | Client-side routing |
-| Tailwind CSS | Utility-first styling |
-| Vite | Build tool & dev server |
-| Vitest | Unit testing framework |
-| @vue/test-utils | Vue component testing |
-| Storybook | Component documentation |
-| HackerNews API | Real data source |
+| Technology      | Purpose                        |
+| --------------- | ------------------------------ |
+| Vue 3           | UI framework (Composition API) |
+| Vue Router      | Client-side routing            |
+| Tailwind CSS    | Utility-first styling          |
+| Vite            | Build tool & dev server        |
+| Vitest          | Unit testing framework         |
+| @vue/test-utils | Vue component testing          |
+| Storybook       | Component documentation        |
+| HackerNews API  | Real data source               |
 
 ---
 
@@ -169,6 +180,7 @@ All 46 tests passing:
 ## 🔗 API Integration
 
 Uses official HackerNews Firebase API:
+
 - `GET /v0/topstories.json` - Top story IDs
 - `GET /v0/item/{id}.json` - Item details
 - Recursive comment loading
@@ -207,21 +219,21 @@ Uses official HackerNews Firebase API:
 ✅ Visit external article links  
 ✅ Responsive on all devices  
 ✅ View all components in Storybook  
-✅ Run comprehensive test suite  
+✅ Run comprehensive test suite
 
 ---
 
 ## 🔧 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm test` | Run tests once |
-| `npm test -- --watch` | Run tests in watch mode |
-| `npm run coverage` | Generate test coverage |
-| `npm run storybook` | Start Storybook server |
+| Command                   | Description                 |
+| ------------------------- | --------------------------- |
+| `npm run dev`             | Start development server    |
+| `npm run build`           | Build for production        |
+| `npm run preview`         | Preview production build    |
+| `npm test`                | Run tests once              |
+| `npm test -- --watch`     | Run tests in watch mode     |
+| `npm run coverage`        | Generate test coverage      |
+| `npm run storybook`       | Start Storybook server      |
 | `npm run build-storybook` | Build Storybook static site |
 
 ---

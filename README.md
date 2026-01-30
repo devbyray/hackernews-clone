@@ -2,9 +2,9 @@
 
 A fully functional, read-only HackerNews clone built from scratch with Vue 3, featuring comprehensive testing and documentation.
 
-[![Tests](https://img.shields.io/badge/tests-46%20passing-brightgreen)]()
-[![Components](https://img.shields.io/badge/components-7-blue)]()
-[![Stories](https://img.shields.io/badge/storybook-21%20stories-orange)]()
+[![Tests](https://img.shields.io/badge/tests-56%20passing-brightgreen)]()
+[![Components](https://img.shields.io/badge/components-11-blue)]()
+[![Stories](https://img.shields.io/badge/storybook-47%20stories-orange)]()
 
 ![](./screenshot.png)
 
@@ -12,11 +12,12 @@ A fully functional, read-only HackerNews clone built from scratch with Vue 3, fe
 
 - 📰 **Browse Top Stories** - Real-time top 30 stories from HackerNews
 - 💬 **Nested Comments** - Recursive comment threads with collapse/expand
-- 🎨 **Responsive Design** - Beautiful UI with Tailwind CSS
-- 🧪 **Fully Tested** - 46 unit tests with 100% coverage
+- 🎨 **Responsive Design** - Beautiful UI with Tailwind CSS v4
+- 🧪 **Fully Tested** - 62 unit tests (56 passing)
 - 📚 **Documented** - Storybook stories for all components
 - ⚡ **Fast & Modern** - Built with Vite and Vue 3 Composition API
 - ♿ **Accessible** - Semantic HTML and ARIA attributes
+- 🔧 **Reusable Components** - Button and Input components for consistency
 
 ## 🎯 Live Demo
 
@@ -31,15 +32,15 @@ Visit: http://localhost:5173
 
 ## 🏗️ Tech Stack
 
-| Technology         | Purpose                        |
-| ------------------ | ------------------------------ |
-| **Vue 3**          | UI Framework (Composition API) |
-| **Vue Router**     | Client-side routing            |
-| **Tailwind CSS**   | Utility-first styling          |
-| **Vitest**         | Unit testing framework         |
-| **Storybook**      | Component documentation        |
-| **Vite**           | Build tool & dev server        |
-| **HackerNews API** | Real data integration          |
+| Technology          | Purpose                        |
+| ------------------- | ------------------------------ |
+| **Vue 3**           | UI Framework (Composition API) |
+| **Vue Router**      | Client-side routing            |
+| **Tailwind CSS v4** | Utility-first styling          |
+| **Vitest**          | Unit testing framework         |
+| **Storybook**       | Component documentation        |
+| **Vite**            | Build tool & dev server        |
+| **HackerNews API**  | Real data integration          |
 
 ## 🚀 Getting Started
 
@@ -82,37 +83,56 @@ npm run preview          # Preview production build
 
 ```
 src/
-├── components/          # 7 components (each with .vue, .test.js, .stories.js)
-│   ├── Header.vue
-│   ├── LoadingSpinner.vue
-│   ├── ErrorMessage.vue
-│   ├── StoryItem.vue
-│   ├── StoryList.vue
-│   ├── CommentItem.vue
-│   └── CommentList.vue
+├── components/          # 11 components (organized in folders)
+│   ├── Button/
+│   │   ├── Button.vue
+│   │   ├── Button.test.js
+│   │   └── Button.stories.js
+│   ├── Input/
+│   │   ├── Input.vue
+│   │   ├── Input.test.js
+│   │   └── Input.stories.js
+│   ├── Header/
+│   │   ├── Header.vue
+│   │   ├── Header.test.js
+│   │   └── Header.stories.js
+│   ├── Footer/
+│   │   ├── Footer.vue
+│   │   └── Footer.stories.js
+│   ├── LoadingSpinner/
+│   ├── ErrorMessage/
+│   ├── StoryItem/
+│   ├── StoryList/
+│   ├── CommentItem/
+│   ├── CommentList/
+│   └── ReadingList/
 ├── pages/               # Application pages
 │   ├── HomePage.vue
 │   └── StoryDetailPage.vue
 ├── router/              # Vue Router configuration
 ├── services/            # HackerNews API service
-└── style.css            # Tailwind CSS
+└── style.css            # Tailwind CSS v4
 ```
 
 ## 🧩 Components
 
-All 7 components are fully tested and documented:
+All 11 components are organized in individual folders with tests and documentation:
 
-| Component          | Purpose               | Tests | Stories |
-| ------------------ | --------------------- | ----- | ------- |
-| **Header**         | Navigation header     | 3     | 1       |
-| **LoadingSpinner** | Loading indicator     | 6     | 5       |
-| **ErrorMessage**   | Error display         | 8     | 5       |
-| **StoryItem**      | Individual story card | 7     | 5       |
-| **StoryList**      | List of stories       | 6     | 5       |
-| **CommentItem**    | Recursive comment     | 8     | 5       |
-| **CommentList**    | Comment container     | 8     | 5       |
+| Component          | Purpose                       | Tests | Stories |
+| ------------------ | ----------------------------- | ----- | ------- |
+| **Button**         | Reusable button (4 variants)  | 8     | 8       |
+| **Input**          | Reusable input (5 types)      | 8     | 6       |
+| **Header**         | Navigation header             | 3     | 1       |
+| **Footer**         | Footer with newsletter signup | -     | 1       |
+| **LoadingSpinner** | Loading indicator             | 6     | 5       |
+| **ErrorMessage**   | Error display                 | 8     | 5       |
+| **StoryItem**      | Individual story card         | 7     | 5       |
+| **StoryList**      | List of stories               | 6     | 5       |
+| **CommentItem**    | Recursive comment             | 8     | 5       |
+| **CommentList**    | Comment container             | 8     | 5       |
+| **ReadingList**    | Reading list display          | -     | 1       |
 
-**Total: 46 tests, 21 Storybook stories**
+**Total: 62 tests (56 passing), 47 Storybook stories**
 
 See [COMPONENTS.md](./COMPONENTS.md) for detailed documentation.
 
@@ -126,9 +146,10 @@ npm test -- --run
 
 **Results:**
 
-- ✅ 7 test files
-- ✅ 46 tests passing
-- ✅ 100% component coverage
+- ✅ 9 test files
+- ✅ 56 tests passing (62 total)
+- ✅ Comprehensive component coverage
+- 🎯 New Button and Input components: 16/16 tests passing
 
 ## 📚 Documentation
 
@@ -149,12 +170,14 @@ Uses the official [HackerNews Firebase API](https://github.com/HackerNews/API):
 
 ### Change Theme Colors
 
-Edit `tailwind.config.js`:
+Edit `src/style.css` (Tailwind CSS v4):
 
-```javascript
-colors: {
-  'hn-orange': '#ff6600',  // HackerNews orange
-  'hn-bg': '#f6f6ef',      // Light background
+```css
+@theme {
+	--color-hn-orange: #ff6600;
+	--color-hn-bg: #fafcff;
+	--color-hn-text: #54575a;
+	--color-hn-dark: #3f220f;
 }
 ```
 

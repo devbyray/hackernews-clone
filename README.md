@@ -19,7 +19,12 @@ A fully functional, read-only HackerNews clone built from scratch with Vue 3, fe
 - ♿ **Accessible** - Semantic HTML and ARIA attributes
 - 🔧 **Reusable Components** - Button and Input components for consistency
 
-## 🎯 Live Demo
+## � Design
+
+Built from a community Figma design:
+- **[HackerNews Website Redesign](https://www.figma.com/design/nZYxyHjSmGpgACq6qC4Wq6/HackerNews-Website-Redesign--Community-?node-id=19-1250&t=UCkFgUKMUAWa1SPp-4)** - Modern redesign with orange branding
+
+## �🎯 Live Demo
 
 Run locally in 2 minutes:
 

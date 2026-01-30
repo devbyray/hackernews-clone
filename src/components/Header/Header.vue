@@ -30,17 +30,17 @@
 
           <!-- Right Actions -->
           <div class="flex items-center space-x-4">
-            <button class="p-2 hover:bg-hn-dark/10 rounded transition-colors" title="Dark mode">
+            <Button variant="icon" title="Dark mode">
               <svg class="w-6 h-6 text-hn-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
               </svg>
-            </button>
-            <button class="flex items-center space-x-2 bg-white px-6 py-2 rounded text-hn-dark font-medium hover:bg-gray-50 transition-colors">
+            </Button>
+            <Button variant="secondary">
               <span>Login</span>
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
-            </button>
+            </Button>
           </div>
         </div>
       </div>
@@ -56,11 +56,11 @@
               placeholder="What are you looking for?..." 
               class="flex-1 text-2xl text-hn-text/50 placeholder:text-hn-text/50 bg-transparent border-none focus:outline-none font-light"
             />
-            <button class="p-2 hover:bg-gray-100 rounded transition-colors">
+            <Button variant="icon">
               <svg class="w-6 h-6 text-hn-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
-            </button>
+            </Button>
           </div>
           <div class="bg-hn-orange px-8 py-6 -my-6 -mr-[70px] flex items-center space-x-2 cursor-pointer hover:bg-orange-600 transition-colors">
             <span class="text-hn-dark text-2xl font-light">Filter Options</span>
@@ -75,6 +75,8 @@
 </template>
 
 <script setup>
+import Button from '../Button/Button.vue'
+
 /**
  * Header Component
  * 

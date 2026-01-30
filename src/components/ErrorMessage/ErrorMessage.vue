@@ -9,18 +9,22 @@
       <div class="ml-3 flex-1">
         <h3 class="text-sm font-medium text-red-800">{{ title }}</h3>
         <p v-if="message" class="mt-1 text-sm text-red-700">{{ message }}</p>
-        <button 
+        <Button 
           v-if="retryable" 
           @click="handleRetry"
-          class="mt-2 text-sm text-red-800 underline hover:text-red-900"
+          variant="ghost"
+          size="sm"
+          class="mt-2 text-red-800 underline hover:text-red-900"
         >
           Try again
-        </button>
+        </Button>
       </div>
       <div v-if="dismissible" class="ml-auto pl-3">
-        <button 
+        <Button 
           @click="handleDismiss"
-          class="inline-flex text-red-400 hover:text-red-500"
+          variant="icon"
+          size="sm"
+          class="text-red-400 hover:text-red-500"
         >
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -32,6 +36,8 @@
 </template>
 
 <script setup>
+import Button from '../Button/Button.vue'
+
 /**
  * ErrorMessage Component
  * 

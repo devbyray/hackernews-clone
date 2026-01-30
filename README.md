@@ -6,6 +6,8 @@ A fully functional, read-only HackerNews clone built from scratch with Vue 3, fe
 [![Components](https://img.shields.io/badge/components-7-blue)]()
 [![Stories](https://img.shields.io/badge/storybook-21%20stories-orange)]()
 
+![](./screenshot.png)
+
 ## ✨ Features
 
 - 📰 **Browse Top Stories** - Real-time top 30 stories from HackerNews
@@ -168,11 +170,9 @@ const storyIds = await getTopStories(30) // Change to any number
 
 ### Home Page - Top Stories
 
+![](./screenshot.png)
+
 Browse the latest HackerNews stories with scores, authors, and comment counts.
-
-### Story Detail Page
-
-View full story details with nested, collapsible comment threads.
 
 ## 🤝 Contributing
 

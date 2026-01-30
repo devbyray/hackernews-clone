@@ -11,14 +11,14 @@
           </div>
           <div class="flex flex-col space-y-2">
             <div class="flex space-x-3">
-              <input 
+              <Input 
                 type="email" 
                 placeholder="Enter your email"
-                class="px-6 py-3 rounded bg-white text-hn-dark text-lg font-medium placeholder:text-hn-dark/60 focus:outline-none focus:ring-2 focus:ring-hn-dark/20"
+                class="w-64"
               />
-              <button class="px-8 py-3 bg-hn-dark text-white text-lg font-medium rounded hover:bg-hn-dark/90 transition-colors">
+              <Button variant="primary">
                 Sign Up
-              </button>
+              </Button>
             </div>
             <p class="text-lg text-hn-dark font-light">Don't worry, we won't spam you.</p>
           </div>
@@ -82,6 +82,9 @@
 </template>
 
 <script setup>
+import Button from '../Button/Button.vue'
+import Input from '../Input/Input.vue'
+
 /**
  * Footer Component
  * 
